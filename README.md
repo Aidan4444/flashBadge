@@ -11,9 +11,9 @@
   <p align="center">
     A FiveM Standalone script that allows you to flash your badge.
     <br />
-    <a href="https://github.com/Aidan4444/radioPanicButton/issues">Report Bug</a>
+    <a href="https://github.com/Aidan4444/flashBadge/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Aidan4444/radioPanicButton/issues">Request Feature</a>
+    <a href="https://github.com/Aidan4444/flashBadge/issues">Request Feature</a>
   </p>
 </p>
 
@@ -107,11 +107,11 @@ FiveM Post   - [Radio Panic Button](https://forum.cfx.re/u/aidan_ogg)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Aidan4444/radioPanicButton.svg?style=for-the-badge
-[contributors-url]: https://github.com/Aidan4444/radioPanicButton/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Aidan4444/radioPanicButton.svg?style=for-the-badge
-[forks-url]: https://github.com/Aidan4444/radioPanicButton/network/members
-[stars-shield]: https://img.shields.io/github/stars/Aidan4444/radioPanicButton.svg?style=for-the-badge
-[stars-url]: https://github.com/Aidan4444/radioPanicButton/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Aidan4444/radioPanicButton.svg?style=for-the-badge
-[issues-url]: https://github.com/Aidan4444/radioPanicButton/issues
+[contributors-shield]: https://img.shields.io/github/contributors/Aidan4444/flashBadge.svg?style=for-the-badge
+[contributors-url]: https://github.com/Aidan4444/flashBadge/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Aidan4444/flashBadge.svg?style=for-the-badge
+[forks-url]: https://github.com/Aidan4444/flashBadge/network/members
+[stars-shield]: https://img.shields.io/github/stars/Aidan4444/flashBadge.svg?style=for-the-badge
+[stars-url]: https://github.com/Aidan4444/flashBadge/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Aidan4444/flashBadge.svg?style=for-the-badge
+[issues-url]: https://github.com/Aidan4444/flashBadge/issues
