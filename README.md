@@ -43,11 +43,9 @@
 
 
 ## Showcase
-[Showcase Video](https://cdn.discordapp.com/attachments/831462056229994497/846989705085845504/radioPanicButton.mp4)
+[Showcase Video](https://streamable.com/av7hoe)
 
-![image|690x29, 100%](https://cdn.discordapp.com/attachments/831462056229994497/846989150535417876/8026304cff389a4a54ca5dcfc92911f6.png)
-
-![image|333x163, 100%](https://cdn.discordapp.com/attachments/831462056229994497/846989127601356800/a6135ec06fd504aacbb2e48ca9ca224e.png)
+![flashBadgeKeybind|690x32](https://cdn.discordapp.com/attachments/831462056229994497/847384962499870740/flashBadgeKeybind.png)
 
 
 ## Example Config
@@ -98,7 +96,7 @@ Discord      - [Aidan_ogg#0001](https://discordapp.com/users/705110046563893259)
 
 FiveM Forums - [Aidan_ogg](https://forum.cfx.re/u/aidan_ogg)
 
-FiveM Post   - [Radio Panic Button](https://forum.cfx.re/u/aidan_ogg)
+FiveM Post   - [Flash Badge](https://forum.cfx.re/u/aidan_ogg)
 
 
 
