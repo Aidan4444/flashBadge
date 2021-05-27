@@ -9,5 +9,5 @@ config = {
     useKeybind = true, -- If enabled will allow you to use a keybind to flash your badge (keybind is customizable in the GTA V keybinds setting menu)
     keybind = 'g', -- Starting keybind (each client can customize their own keybind in the GTA V keybinds menu)
 
-    propName = 'prop_fib_badge' -- The name of the badge prop
+    propName = 'prop_fib_badge', -- The name of the badge prop
 }
