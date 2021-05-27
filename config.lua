@@ -1,5 +1,5 @@
 config = {
-    acePermissionName = 'flashBadge', -- Example for config: add_ace group.leo "flashBadge" allow
+    acePermissionName = 'flashBadge', -- Example for config: add_ace group.leo flashBadge allow
 
     useCommand = true, -- If enabled will allow you to do a command (specified in commandName) to flash your badge
     commandName = 'badge', -- The name of the command used to flash your badge
