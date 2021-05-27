@@ -1,13 +1,15 @@
-fx_version 'bodacious'
-game 'gta5'
+fx_version "cerulean"
+game "gta5"
 
-author 'Aidan_ogg#0001'
-description 'Flash Badge'
-version '1.002'
+author "Aidan_ogg#0001"
+description "Flash Badge"
 
 client_scripts {
-    'client.lua',
-    'config.lua'
+    'config.lua',
+    'client.lua'
 }
 
-server_script 'server.lua'
+server_scripts {
+    'server.lua',
+    'config.lua'
+}
