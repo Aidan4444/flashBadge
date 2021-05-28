@@ -3,6 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![Discord Shield][discord-shield]][discord-invite]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -99,6 +100,8 @@ FiveM Forums - [Aidan_ogg](https://forum.cfx.re/u/aidan_ogg)
 
 FiveM Post   - [Flash Badge](https://forum.cfx.re/t/standalone-release-flash-badge-script/2977049)
 
+[![Discord Banner][discord-banner]][discord-invite]
+
 
 
 
@@ -116,3 +119,6 @@ FiveM Post   - [Flash Badge](https://forum.cfx.re/t/standalone-release-flash-bad
 [issues-url]: https://github.com/Aidan4444/flashBadge/issues
 [license-shield]: https://img.shields.io/github/license/Aidan4444/flashBadge.svg?style=for-the-badge
 [license-url]: https://github.com/Aidan4444/flashBadge/blob/master/LICENSE
+[discord-invite]: https://discord.gg/vxDde5utc5
+[discord-shield]: https://discord.com/api/guilds/847541172876607538/widget.png?style=shield
+[discord-banner]: https://discord.com/api/guilds/847541172876607538/widget.png?style=banner2
