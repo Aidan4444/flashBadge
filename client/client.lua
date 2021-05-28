@@ -1,3 +1,28 @@
+ESX = nil
+local PlayerData = {}
+Citizen.CreateThread(function()
+    while ESX == nil do
+        TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+        Citizen.Wait(0)
+    end
+
+    while ESX.GetPlayerData().job == nil do
+        Citizen.Wait(10)
+    end
+
+    PlayerData = ESX.GetPlayerData()
+end)
+
+RegisterNetEvent('esx:playerLoaded')
+AddEventHandler('esx:playerLoaded', function(xPlayer)
+    PlayerData = xPlayer
+end)
+
+RegisterNetEvent('esx:setJob')
+AddEventHandler('esx:setJob', function(job)
+    PlayerData.job = job
+end)
+
 RegisterNetEvent('flashBadge:client:animation')
 AddEventHandler('flashBadge:client:animation', function()
     Citizen.CreateThread(function()
@@ -39,7 +64,9 @@ RegisterKeyMapping('+flashBadge', 'Flash Badge', 'keyboard', config.keybind)
 RegisterCommand('+flashBadge', function()
     if config.useKeybind then 
         if leoAcePerm then 
-            TriggerEvent('flashBadge:client:animation')        
+            TriggerEvent('flashBadge:client:animation')      
+        elseif PlayerData.job and PlayerData.job.name == 'police' then 
+            TriggerEvent('flashBadge:client:animation')      
         end 
     end 
 end, false)
