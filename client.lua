@@ -21,16 +21,50 @@ Citizen.CreateThread(function()
     end
 end)
 
+if config.useESX then 
+    ESX = nil 
+    local playerData = {}
+
+    Citizen.CreateThread(function()
+        while ESX == nil do 
+            TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+            Citizen.Wait(0)
+        end 
+
+        while ESX.GetPlayerData().job == nil do 
+            Citizen.Wait(10)
+        end
+
+        playerData = ESX.GetPlayerData()
+    end) 
+
+    RegisterNetEvent('esx:playerLoaded')
+    AddEventHandler('esx:playerLoaded', function(xPlayer)
+        playerData = xPlayer
+    end)
+
+    RegisterNetEvent('esx:setJob')
+    AddEventHandler('esx:setJob', function(job)
+        playerData.job = job
+    end)
+end 
+
 RegisterCommand(config.commandName, function()
     if config.useCommand then 
-        if leoAcePerm then
-            TriggerEvent('flashBadge:client:animation')
-        else
-            TriggerEvent('chat:addMessage', {
-                color = {255, 92, 92},
-                multiline = true,
-                args = {'[Error]', config.commandErrorMessage}
-            })
+        if config.useESX then 
+            if playerData.job and playerData.job.name == 'police' then 
+                TriggerEvent('flashBadge:client:animation')
+            end 
+        else 
+            if leoAcePerm then
+                TriggerEvent('flashBadge:client:animation')
+            else
+                TriggerEvent('chat:addMessage', {
+                    color = {255, 92, 92},
+                    multiline = true,
+                    args = {'[Error]', config.commandErrorMessage}
+                })
+            end
         end
     end
 end, false)
@@ -38,9 +72,15 @@ end, false)
 RegisterKeyMapping('+flashBadge', 'Flash Badge', 'keyboard', config.keybind)
 RegisterCommand('+flashBadge', function()
     if config.useKeybind then 
-        if leoAcePerm then 
-            TriggerEvent('flashBadge:client:animation')        
-        end 
+        if config.useESX then 
+            if playerData.job and playerData.job.name == 'police' then 
+                TriggerEvent('flashBadge:client:animation')
+            end 
+        else
+            if leoAcePerm then 
+                TriggerEvent('flashBadge:client:animation')        
+            end 
+        end
     end 
 end, false)
 
