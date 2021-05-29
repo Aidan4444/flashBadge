@@ -1,5 +1,7 @@
 config = {
-    acePermissionName = 'flashBadge', -- Example for config: add_ace group.leo flashBadge allow
+    useESX = false, -- If you are using this script for an ESX server set this to true, if not leave it at false
+
+    acePermissionName = 'flashBadge', -- Example for config: add_ace group.leo "flashBadge" allow
 
     useCommand = true, -- If enabled will allow you to do a command (specified in commandName) to flash your badge
     commandName = 'badge', -- The name of the command used to flash your badge
