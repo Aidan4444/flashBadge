@@ -42,6 +42,7 @@
 * Ability to either use a command, keybind, or both
 * Each client can customize their keybind
 * Fully customizable
+* Supports ESX
 
 
 ## Showcase
