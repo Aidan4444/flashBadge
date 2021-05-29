@@ -1,9 +1,9 @@
 {
-    "version": "1.002",
+    "version": "1.012",
     "changelog": "https://github.com/Aidan_ogg/flashBadge/releases/latest",
 
     "fivem": {
-        "version": "1.002",
-        "changelog": "Added version check."
+        "version": "1.012",
+        "changelog": "Added ESX support."
     }
 }
