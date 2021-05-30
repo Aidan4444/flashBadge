@@ -76,8 +76,11 @@ RegisterKeyMapping('+flashBadge', 'Flash Badge', 'keyboard', config.keybind)
 RegisterCommand('+flashBadge', function()
     if config.useKeybind then 
         if config.useESX then 
-            if playerData.job and playerData.job.name == 'police' then 
-                TriggerEvent('flashBadge:client:animation')
+            for _, jobName in ipairs(config.ESXJob) do 
+                if playerData.job and playerData.job.name == jobName then 
+                    TriggerEvent('flashBadge:client:animation')
+                    break
+                end
             end 
         else
             if leoAcePerm then 
