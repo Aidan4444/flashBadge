@@ -23,7 +23,7 @@ end)
 
 if config.useESX then 
     ESX = nil 
-    playerData = {}
+    local playerData = {}
 
     Citizen.CreateThread(function()
         while ESX == nil do 
@@ -52,8 +52,11 @@ end
 RegisterCommand(config.commandName, function()
     if config.useCommand then 
         if config.useESX then 
-            if playerData.job and playerData.job.name == 'police' then 
-                TriggerEvent('flashBadge:client:animation')
+            for _, job in pairs(config.ESXJob) do 
+                if playerData.job and playerData.job.name == job then 
+                    TriggerEvent('flashBadge:client:animation')
+                    break
+                end 
             end 
         else 
             if leoAcePerm then
