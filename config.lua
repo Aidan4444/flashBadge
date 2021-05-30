@@ -1,9 +1,9 @@
 config = {
     useESX = false, -- If you are using this script for an ESX server set this to true, if not leave it at false
-    ESXJobs = {
-        [1] = 'police',
-        [2] = 'swat',
-        [3] = 'fbi',
+    ESXJobs = { -- Add your law enforcement jobs for ESX
+        'police',
+        'swat',
+        'fbi',
     },
 
     acePermissionName = 'flashBadge', -- Example for config: add_ace group.leo "flashBadge" allow
