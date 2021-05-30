@@ -4,6 +4,6 @@
 
     "fivem": {
         "version": "1.014",
-        "changelog": "Added ESX support."
+        "changelog": "Added ESX jobs to config."
     }
 }
