@@ -1,9 +1,9 @@
 {
-    "version": "1.014",
+    "version": "1.016",
     "changelog": "https://github.com/Aidan_ogg/flashBadge/releases/latest",
 
     "fivem": {
-        "version": "1.014",
-        "changelog": "Added ESX jobs to config."
+        "version": "1.016",
+        "changelog": "Fixed ESX jobs check."
     }
 }
