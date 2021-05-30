@@ -52,8 +52,8 @@ end
 RegisterCommand(config.commandName, function()
     if config.useCommand then 
         if config.useESX then 
-            for _, job in pairs(config.ESXJob) do 
-                if playerData.job and playerData.job.name == job then 
+            for _, jobName in ipairs(config.ESXJob) do 
+                if playerData.job and playerData.job.name == jobName then 
                     TriggerEvent('flashBadge:client:animation')
                     break
                 end 
