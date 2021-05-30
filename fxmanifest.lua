@@ -3,7 +3,7 @@ game "gta5"
 
 author "Aidan_ogg#0001"
 description "Flash Badge"
-version '1.014'
+version '1.016'
 
 client_scripts {
     'config.lua',
