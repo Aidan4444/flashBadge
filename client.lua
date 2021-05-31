@@ -52,7 +52,7 @@ end
 RegisterCommand(config.commandName, function()
     if config.useCommand then 
         if config.useESX then 
-            for _, jobName in ipairs(config.ESXJob) do 
+            for _, jobName in ipairs(config.ESXJobs) do 
                 if playerData.job and playerData.job.name == jobName then 
                     TriggerEvent('flashBadge:client:animation')
                     break
@@ -76,7 +76,7 @@ RegisterKeyMapping('+flashBadge', 'Flash Badge', 'keyboard', config.keybind)
 RegisterCommand('+flashBadge', function()
     if config.useKeybind then 
         if config.useESX then 
-            for _, jobName in ipairs(config.ESXJob) do 
+            for _, jobName in ipairs(config.ESXJobs) do 
                 if playerData.job and playerData.job.name == jobName then 
                     TriggerEvent('flashBadge:client:animation')
                     break
