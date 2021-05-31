@@ -21,9 +21,9 @@ Citizen.CreateThread(function()
     end
 end)
 
+local playerData = {}
 if config.useESX then 
     ESX = nil 
-    local playerData = {}
 
     Citizen.CreateThread(function()
         while ESX == nil do 
