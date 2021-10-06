@@ -3,7 +3,7 @@
     "changelog": "https://github.com/Aidan_ogg/flashBadge/releases/latest",
 
     "fivem": {
-        "version": "1.016",
-        "changelog": "Fixed ESX jobs check."
+        "version": "1.017",
+        "changelog": "Fixed issue where when keybind was disabled it would still add it to the keybind list and display it in chat"
     }
 }

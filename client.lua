@@ -72,9 +72,9 @@ RegisterCommand(config.commandName, function()
     end
 end, false)
 
-RegisterKeyMapping('+flashBadge', 'Flash Badge', 'keyboard', config.keybind)
-RegisterCommand('+flashBadge', function()
-    if config.useKeybind then 
+if useKeybind then
+    RegisterKeyMapping('+flashBadge', 'Flash Badge', 'keyboard', config.keybind)
+    RegisterCommand('+flashBadge', function()
         if config.useESX then 
             for _, jobName in ipairs(config.ESXJobs) do 
                 if playerData.job and playerData.job.name == jobName then 
@@ -87,8 +87,8 @@ RegisterCommand('+flashBadge', function()
                 TriggerEvent('flashBadge:client:animation')        
             end 
         end
-    end 
-end, false)
+    end, false)
+end
 
 TriggerServerEvent('flashBadge:server:checkAcePermission')
 RegisterNetEvent('flashBadge:client:checkAcePermission')
